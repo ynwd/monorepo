@@ -1,0 +1,9 @@
+{
+    "name": "@fstr/monorepo",
+    "private": true,
+    "version": "1.0.0",
+    "workspaces": [
+        "./web/*",
+        "./web/modules/*"
+    ]
+}
