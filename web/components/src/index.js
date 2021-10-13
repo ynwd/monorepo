@@ -1,4 +1,5 @@
 import React from "react"
+import { Button } from "./stories/Button.jsx"
 
 const Header = ({ text = "" }) => {
     return (
@@ -7,5 +8,6 @@ const Header = ({ text = "" }) => {
 }
 
 export {
+    Button,
     Header
 }
