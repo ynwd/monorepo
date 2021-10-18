@@ -1,14 +1,10 @@
-import './App.css'
 import { Header, Button } from "@fstr/components"
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header text="from root" />
-      <Button
-        label="Button"
-        onClick={() => { }}
-      />
+      <Button text="my button" />
     </div>
   )
 }

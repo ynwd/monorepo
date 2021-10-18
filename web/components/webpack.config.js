@@ -1,7 +1,8 @@
-const path = require("path")
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const devMode = process.env.NODE_ENV !== "production"
 
 module.exports = {
-    mode: "production",
+    mode: devMode ? "development" : "production",
     entry: {
         index: { import: "./src/index.js" }
     },
@@ -14,7 +15,11 @@ module.exports = {
             },
             {
                 test: /\.css$/i,
-                use: ['style-loader', 'css-loader'],
+                use: [
+                    devMode ? "style-loader" : MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    "postcss-loader",
+                ],
             },
         ],
     },
@@ -24,4 +29,5 @@ module.exports = {
         libraryTarget: 'umd',
         clean: true
     },
+    plugins: [].concat(devMode ? [] : [new MiniCssExtractPlugin()]),
 }
