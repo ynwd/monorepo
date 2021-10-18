@@ -1,3 +1,3 @@
 # Webpack and storybook
 
-Source code of https://dev.to/ynwd/how-to-integrate-storybook-with-npm-workspace-react-and-webpack-4cb5
+Source code of https://dev.to/ynwd/how-to-setup-react-shared-components-in-monorepo-with-tailwind-webpack-and-npm-workspace-570n
