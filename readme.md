@@ -1,3 +1,3 @@
-# React-tailwind components
+# Monorepo React-Typescript
 
-Source code of https://dev.to/ynwd/how-to-setup-react-shared-components-in-monorepo-with-tailwind-webpack-and-npm-workspace-570n
+Source code for: https://dev.to/ynwd/how-to-setup-react-tailwind-webpack-and-typescript-in-a-monorepo-3ogm

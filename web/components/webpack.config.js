@@ -4,14 +4,22 @@ const devMode = process.env.NODE_ENV !== "production"
 module.exports = {
     mode: devMode ? "development" : "production",
     entry: {
-        index: { import: "./src/index.js" }
+        index: { import: "./src/index.ts" }
+    },
+    resolve: {
+        extensions: ['.tsx', '.ts', '.js'],
     },
     module: {
         rules: [
             {
-                test: /\.jsx?$/,
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 loader: "babel-loader",
+            },
+            {
+                test: /\.(ts|tsx)$/,
+                exclude: /node_modules/,
+                loader: "ts-loader",
             },
             {
                 test: /\.css$/i,
