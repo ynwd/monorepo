@@ -1,3 +1,3 @@
-# Monorepo React-Typescript
+# How to setup golang backend and react frontend in a monorepo 
 
-Source code for: https://dev.to/ynwd/how-to-setup-react-tailwind-webpack-and-typescript-in-a-monorepo-3ogm
+Source code of: https://dev.to/ynwd/how-to-setup-golang-backend-and-react-frontend-in-a-monorepo-3api
